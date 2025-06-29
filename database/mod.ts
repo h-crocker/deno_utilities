@@ -1,13 +1,13 @@
-export { ConnectionPool } from "./connection_pool.ts";
-export { Database } from "./database.ts";
-export { Table } from "./table.ts";
+export { ConnectionPool } from "./src/connection_pool.ts";
+export { Database } from "./src/database.ts";
+export { Table } from "./src/table.ts";
 
-export { Column, TextColumn, NumericColumn, IntegerColumn, RealColumn, BlobColumn } from "./column.ts";
+export { Column, TextColumn, NumericColumn, IntegerColumn, RealColumn, BlobColumn } from "./src/column.ts";
 
-export { PrimaryKey } from "./primary_key.ts";
-export { ForeignKey, ForeignKeyReferences } from "./foreign_key.ts";
+export { PrimaryKey } from "./src/primary_key.ts";
+export { ForeignKey, ForeignKeyReferences } from "./src/foreign_key.ts";
 
-export { RowData, NewRow } from "./row.ts";
+export { RowData, NewRow } from "./src/row.ts";
 
 export {
     type Queryable,
@@ -30,7 +30,7 @@ export {
     type WhereCondition,
     type JoinCondition,
     Query
-} from "./query.ts";
+} from "./src/query.ts";
 
 export {
     type DatabaseStructure,
@@ -49,4 +49,4 @@ export {
     AssertIntegerColumnStructure,
     AssertRealColumnStructure,
     AssertBlobColumnStructure
-} from "./database_structure.ts";
+} from "./src/database_structure.ts";

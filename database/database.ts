@@ -1,10 +1,10 @@
-import { DB } from "sqlite";
-import { DatabaseStructure, TableStructure } from "./database_structure.ts";
+import type { DB } from "./sqlite.ts";
+import type { DatabaseStructure, TableStructure } from "./database_structure.ts";
+import type { ConnectionPool } from "./connection_pool.ts";
+import type { RowData } from "./row.ts";
+
 import { generateCreateTableQuery, generateInsertQuery, generateSelectAllQuery, TABLE_EXISTS_QUERY } from "./sql_query_strings/table_queries.ts";
 import { Table } from "./table.ts";
-import { ConnectionPool } from "./connection_pool.ts";
-import { RowData } from "./row.ts";
-
 
 export class Database implements DatabaseStructure {
     private readonly path: string;

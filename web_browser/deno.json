@@ -1,8 +1,0 @@
-{
-    "name": "@harrys/web_browser",
-    "version": "0.0.1",
-    "exports": "./mod.ts",
-    "imports": {
-        "@astral/astral": "jsr:@astral/astral@^0.5.3"
-    }
-}

@@ -1,4 +1,4 @@
-import { Browser as AstralBrowser, launch, Page as AstralPage } from "@astral/astral";
+import { Browser as AstralBrowser, Page as AstralPage, launch } from "jsr:@astral/astral@^0.5.3";
 import { Tab } from "./tab.ts";
 import { Element } from "./element.ts";
 

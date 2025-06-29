@@ -1,4 +1,4 @@
-import { DB } from "sqlite";
+import { DB } from "./sqlite.ts";
 
 export class ConnectionPool {
     private pool = new Map<string, DB>();
